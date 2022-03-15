@@ -32,3 +32,17 @@
 .slide-box {
 	width: 100vw;
 }
+
+.scroll-indicator {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 5px;
+	background-color: darkgray;
+}
+
+.scroll-progress {
+	width: 0%;
+	height: 5px;
+	background-color: black;
+}

@@ -120,5 +120,125 @@
 				}
 			});
 		</script>
+
+		<div class="alert alert-danger"><span class="time">5</span>초 후 사라집니다.</div>
+
+		<script>
+			let time = 5;
+			setInterval(function () {
+				time -= 1;
+				if (time >= 0) {
+					document.querySelector(".time").innerHTML = time;
+				}
+			}, 1000);
+
+			setTimeout(function () {
+				document.querySelector(".alert-danger").style.display = "none";
+			}, 5000);
+		</script>
+
+		<div class="scroll-indicator">
+			<div class="scroll-progress"></div>
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis
+			perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur
+			adipisci natus deleniti non et id ducimus, delectus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad
+			itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid
+			laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti
+			fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing
+			elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit
+			amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id
+			quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti
+			non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae
+			blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero
+			assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id
+			ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae
+			blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero
+			assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id
+			ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae
+			blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero
+			assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id
+			ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae
+			blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero
+			assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id
+			ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae
+			blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero
+			assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id
+			ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae
+			blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero
+			assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id
+			ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae
+			blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero
+			assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id
+			ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae
+			blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero
+			assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id
+			ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae
+			blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero
+			assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id
+			ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae
+			blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero
+			assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id
+			ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae
+			blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero
+			assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt autem quia culpa consectetur adipisci natus deleniti non et id
+			ducimus, delectus illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni corrupti fuga quae repudiandae vitae blanditiis sed suscipit ad itaque explicabo, autem nemo
+			distinctio eveniet veritatis perferendis maiores id quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas libero assumenda placeat commodi aliquid laboriosam dolores deserunt
+			autem quia culpa consectetur adipisci natus deleniti non et id ducimus, delectus illum.
+		</p>
+
+		<script>
+			window.addEventListener("scroll", function () {
+				let winScroll = document.documentElement.scrollTop;
+				let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				let scrolled = (winScroll / height) * 100;
+				document.querySelector(".scroll-progress").style.width = scrolled + "%";
+			});
+		</script>
 	</body>
 </html>
