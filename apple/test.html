@@ -28,6 +28,24 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
+		<button id="login" class="btn btn-danger">로그인</button>
+		<div class="black-bg">
+			<div class="white-bg">
+				<h4>shirts on Sale</h4>
+				<button id="close" class="btn btn-danger">닫기</button>
+			</div>
+		</div>
+		<script>
+			document.querySelector("#login").addEventListener("click", function () {
+				document.querySelector(".black-bg").classList.add("show-modal");
+			});
+
+			document.querySelector(".black-bg").addEventListener("click", function (e) {
+				if (e.target == document.querySelector(".black-bg")) {
+					document.querySelector(".black-bg").classList.remove("show-modal");
+				}
+			});
+		</script>
 		<form action="success.html">
 			<div class="my-3">
 				e-mail
