@@ -42,8 +42,12 @@
 			</div>
 		</div>
 
+		<div class="container my-4">
+			<button class="btn btn-danger" id="sort-price">가격순정렬</button>
+		</div>
+
 		<script>
-			var products = [
+			const products = [
 				{ id: 0, price: 70000, title: "Blossom Dress" },
 				{ id: 1, price: 50000, title: "Springfield Shirt" },
 				{ id: 2, price: 60000, title: "Black Monastery" },
@@ -55,6 +59,15 @@
 			for (i = 0; i < 3; i++) {
 				card(i);
 			}
+
+			document.querySelector("#sort-price").addEventListener("click", function () {
+				products.sort(function (a, b) {
+					return a.price - b.price;
+				});
+				for (i = 0; i < 3; i++) {
+					card(i);
+				}
+			});
 		</script>
 	</body>
 </html>
