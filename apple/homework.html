@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>homework</title>
+	</head>
+	<body>
+		<script>
+			const 출석부 = ["흥민", "영희", "철수", "재석"];
+			// function 이름찾기(a) {
+			// 	for (let i = 0; i < 4; i++) {
+			// 		if (a === 출석부[i]) {
+			// 			console.log("있어요.");
+			// 		}
+			// 	}
+			// 	return;}
+
+			function 이름찾기(a) {
+				출석부.forEach(function (name, i) {
+					if (a === 출석부[i]) {
+						console.log("있어요.");
+					}
+				});
+			}
+			이름찾기("재석");
+			var pants = [28, 30, 32];
+			pants.forEach(function (i) {
+				console.log(i);
+			});
+			let a = 2;
+			for (let i = 1; i < 10; i++) {
+				if (a >= 2 || a < 10) {
+					console.log(i * a);
+				}
+				a = a++;
+			}
+
+			for (var z = 2; z < 10; z++) {
+				for (var i = 1; i < 10; i++) {
+					console.log(z * i);
+				}
+			}
+
+			const 철수실적 = [10, 20, 30, 40, 50];
+			const 철수목표 = 35;
+			const 흥민실적 = [11, 6, 2, 3, 5];
+			const 흥민목표 = 10;
+
+			function 목표량계산기(실적, 목표) {
+				let 실적5개월 = 0;
+				for (let i = 0; i < 5; i++) {
+					실적5개월 = 실적5개월 + 실적[i];
+				}
+				console.log(`${목표 * 6 - 실적5개월}을 더 판매 해야 합니다.`);
+			}
+			목표량계산기(흥민실적, 흥민목표);
+		</script>
+	</body>
+</html>
