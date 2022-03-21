@@ -16,11 +16,11 @@
 	</head>
 	<body>
 		<div class="card-group container">
-			<div class="card">
+			<!-- <div class="card">
 				<img src="https://via.placeholder.com/600" />
 				<div class="card-body">
 					<h5>Card title</h5>
-					<p>가격 : 70000</p>
+					<p>가격 :</p>
 					<button class="btn btn-danger">주문하기</button>
 				</div>
 			</div>
@@ -28,7 +28,7 @@
 				<img src="https://via.placeholder.com/600" />
 				<div class="card-body">
 					<h5>Card title</h5>
-					<p>가격 : 70000</p>
+					<p>가격 :</p>
 					<button class="btn btn-danger">주문하기</button>
 				</div>
 			</div>
@@ -36,14 +36,16 @@
 				<img src="https://via.placeholder.com/600" />
 				<div class="card-body">
 					<h5>Card title</h5>
-					<p>가격 : 70000</p>
+					<p>가격 :</p>
 					<button class="btn btn-danger">주문하기</button>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 		<div class="container my-4">
 			<button class="btn btn-danger" id="sort-price">가격순정렬</button>
+			<button class="btn btn-primary" id="abc">가나다정렬</button>
+			<button class="btn btn-primary" id="filter">6만원이하</button>
 		</div>
 
 		<script>
@@ -52,21 +54,62 @@
 				{ id: 1, price: 50000, title: "Springfield Shirt" },
 				{ id: 2, price: 60000, title: "Black Monastery" },
 			];
+			const productsCopy = [...products];
+			let productsItem = `<div class="card">
+				<img src="https://via.placeholder.com/600" />
+				<div class="card-body">
+					<h5>Card title</h5>
+					<p>가격 :</p>
+					<button class="btn btn-danger">주문하기</button>
+				</div>`;
+
+			products.forEach(function (a, list) {
+				document.querySelector(".card-group").insertAdjacentHTML("beforeend", productsItem);
+				document.querySelectorAll(".card-body h5")[list].innerHTML = a.title;
+				document.querySelectorAll(".card-body p")[list].innerHTML = "가격:" + a.price;
+			});
+
 			function card(a) {
 				document.querySelectorAll(".card-body h5")[a].innerHTML = products[a].title;
 				document.querySelectorAll(".card-body p")[a].innerHTML = "가격:" + products[a].price;
 			}
-			for (i = 0; i < 3; i++) {
-				card(i);
-			}
+			// for (i = 0; i < 3; i++) {
+			// 	card(i);
+			// }
 
 			document.querySelector("#sort-price").addEventListener("click", function () {
 				products.sort(function (a, b) {
 					return a.price - b.price;
 				});
-				for (i = 0; i < 3; i++) {
+				for (i = 0; i < products.length; i++) {
 					card(i);
 				}
+			});
+
+			document.querySelector("#abc").addEventListener("click", function () {
+				products.sort(function (a, b) {
+					if (a.title < b.title == true) {
+						return -1;
+					} else {
+						return 1;
+					}
+				});
+				for (i = 0; i < products.length; i++) {
+					card(i);
+				}
+			});
+
+			document.querySelector("#filter").addEventListener("click", function () {
+				document.querySelector(".card-group").innerHTML = "";
+				let 새상품 = products.filter(function (a) {
+					return a.price <= 60000;
+				});
+
+				새상품.forEach(function (a, list) {
+					document.querySelector(".card-group").insertAdjacentHTML("beforeend", productsItem);
+					document.querySelectorAll(".card-body h5")[list].innerHTML = a.title;
+					document.querySelectorAll(".card-body p")[list].innerHTML = "가격:" + a.price;
+				});
 			});
 		</script>
 	</body>
