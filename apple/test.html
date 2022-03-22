@@ -269,8 +269,13 @@
 			var 매니저 = new Hammer.Manager(이미지1);
 			매니저.add(new Hammer.Pan({ threshold: 0 }));
 
-			매니저.addEventListener("pan", function () {
-				console.log("123");
+			매니저.on("pan", function (e) {
+				if (e.deltaX < -1) {
+					document.querySelector(".slide-container").style.transform = `translateX(+${e.deltaX}px)`;
+					// if (e.isFinal) {
+					// 	document.querySelector(".slide-contaner").style.transform = "translateX(-100vw)";
+					// }
+				}
 			});
 		</script>
 	</body>
