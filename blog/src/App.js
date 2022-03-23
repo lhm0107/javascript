@@ -25,7 +25,7 @@ function App() {
 
 	function addTitle() {
 		let newArray = [...글제목];
-		newArray.push(입력값);
+		newArray.unshift(입력값);
 		글제목변경(newArray);
 	}
 
@@ -64,7 +64,7 @@ function App() {
 			<div className="publish">
 				<input
 					onChange={(e) => {
-						입력값변경(e.target.vaule);
+						입력값변경(e.target.value);
 					}}
 				></input>
 				<button onClick={addTitle}>저장</button>
