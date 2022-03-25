@@ -17,12 +17,11 @@ function App() {
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">
-							<Nav.Link href="#home">
-								{" "}
-								<Link to={"/"}>Home</Link>
+							<Nav.Link href="#home" to={"/"} as={Link}>
+								Home
 							</Nav.Link>
-							<Nav.Link href="#link">
-								<Link to={"/Detail"}>Detail</Link>
+							<Nav.Link href="#link" to={"/Detail"} as={Link}>
+								Detail
 							</Nav.Link>
 							<NavDropdown title="Dropdown" id="basic-nav-dropdown">
 								<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -68,11 +67,13 @@ function App() {
 function Product(props) {
 	return (
 		<div className="col-md-4">
-			<img src={`https://codingapple1.github.io/shop/shoes${props.i + 1}.jpg`} alt="신발1" width={"100%"}></img>
-			<h4>{props.shoes.title}</h4>
-			<p>
-				{props.shoes.content} & {props.shoes.price}
-			</p>
+			<Link to={`/Detail/${props.shoes.id}`}>
+				<img src={`https://codingapple1.github.io/shop/shoes${props.shoes.id + 1}.jpg`} alt="신발1" width={"100%"}></img>
+				<h4>{props.shoes.title}</h4>
+				<p>
+					{props.shoes.content} & {props.shoes.price}
+				</p>
+			</Link>
 		</div>
 	);
 }

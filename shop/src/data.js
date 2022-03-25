@@ -15,15 +15,15 @@ export default [
 	},
 
 	{
-		id: 2,
-		title: "Grey Yordan",
-		content: "Born in the States",
-		price: 130000,
-	},
-	{
 		id: 3,
 		title: "nice Yordan",
 		content: "Born in the mind",
 		price: 150000,
+	},
+	{
+		id: 2,
+		title: "Grey Yordan",
+		content: "Born in the States",
+		price: 130000,
 	},
 ];
