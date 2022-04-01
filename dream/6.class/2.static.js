@@ -1,5 +1,4 @@
 //static 정적 프로퍼티 , 메서드
-
 class Fruit {
 	static MAX_FRUITS = 4;
 	//생성자 : new 키워드로 객체를 생성할때 호출되는 함수
@@ -30,3 +29,6 @@ console.log(orange);
 console.log(apple.name);
 apple.display();
 orange.display();
+
+Math.pow();
+Number.isFinite(1);
