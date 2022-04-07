@@ -18,7 +18,7 @@ const item1 = { name: '🥛', price: 2 };
 const item2 = { name: '🍪', price: 3 };
 const item3 = { name: '🍣', price: 1 };
 const products = [item1, item2, item3, item2];
-let result = products.find((value) => value.name === '🍪');
+let result = products.find((value) => value.name === '🍪'); //조건이 맞으면 그아이템을 호출함
 console.log(result);
 
 //findIndex : 제일먼저 조건에 맞는 아이템의 인덱스값을 반환
@@ -81,4 +81,5 @@ console.log(numbers);
 
 // reduce 배열의 요소들을 접어서 접어서 값을 하나로 ??
 result = [1, 2, 3, 4, 5].reduce((sum, value) => (sum += value), 0);
+//sum은 배열이 모두 더해진 값  value는 배열 각각의 값 0= 초기값 변경 할 수 있다.
 console.log(result);

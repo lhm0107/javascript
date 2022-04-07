@@ -12,13 +12,12 @@ console.log(fruits.indexOf('🍎'));
 //특정한 아이템이 있는지 확인 할 때
 console.log(fruits.includes('🍎'));
 
-// 추가 - 제일 뒤에
+// 추가 - 제일 뒤에 추가하고 길이를 리턴한다.
 let length = fruits.push('🍑'); //배열자체를 수정(업데이트)
 console.log(fruits);
 console.log(length);
 
-//추가 - 제일 앞에
-
+//추가 - 제일 앞에 추가하고 길이를 리턴한다.
 length = fruits.unshift('🍓'); //배열자체를 수정(업데이트)
 console.log(fruits);
 console.log(length);
@@ -34,16 +33,15 @@ console.log(lastItem);
 
 //중간에 추가  또는 삭제
 const deleted = fruits.splice(1, 1); //  몇 번째 부터 몇번째에 있는것을 삭제하고 리턴한다.
-console.log(fruits);
+console.log(fruits); // 배열자체를 삭체하고 수정한다.
 console.log(deleted);
 
 fruits.splice(1, 0, '🍎', '🍓'); // 몇 번째 부터 몇번째에 있는것을 삭제할지 정하고  그자리에 추가 할 수 있다.
 console.log(fruits);
 
 //잘라진 새로운 배열을 만듬
-
-let newArr = fruits.slice(0, 3); //0부터 2개의 아이템을 잘라서 새로운 배열을 만든다.
-console.log(newArr);
+let newArr = fruits.slice(0, 2); //0부터 2개의 아이템을 잘라서 새로운 배열을 만든다. [0,1,2] => [0,1]
+console.log(newArr); //
 console.log(fruits);
 newArr = newArr.slice(-1); // 아무것도 입력하지 않으면 배열 전체가 반환이되어 배열을 만든다. 1을 넣어주면 1번 개체부터 끝까지
 // -1을 넣어주면 맨뒤에서 1개체가 반환 된다.(-2는 맨뒤에서 2개의 개체)
@@ -71,8 +69,9 @@ console.log(arr.flat()); // 1단계의 배열을 풀어 줄 수 있다 . 숫자�
 console.log(arr.flat(2));
 console.log(arr.flat(3)); // 새로운 배열을 리턴한다.
 arr = arr.flat(3);
+
 // 특정한 겂으로 배열을 채우기
-arr.fill(0);
+arr.fill(0); // 배열자체를 수정
 console.log(arr);
 
 arr.fill('s', 1, 3); // 변환하여 배열을 채우는데 ('채울아이템' , 시작 순서 , 끝순서) 다만 끝순서는 변환 하지 않는다.

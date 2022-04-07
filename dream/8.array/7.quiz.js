@@ -53,5 +53,5 @@ console.log(match(arr3, arr4));
 //퀴즈4 5보다틈 숫자등의 평균 값 구하기
 const nums = [3, 16, 5, 25, 3, 34, 21];
 
-const result2 = nums.filter((num) => num > 5).reduce((avg, num, _, array) => avg + num / array.length, 0);
+const result2 = nums.filter((num) => num > 5).reduce((avg, num, index, array) => avg + num / array.length, 0);
 console.log(result2);
