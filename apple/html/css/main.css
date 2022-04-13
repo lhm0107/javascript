@@ -1,0 +1,35 @@
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url('../img/shoes.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: aquamarine;
+}
+.left-menu {
+  width: 20%;
+  height: 400px;
+  background-color: cornflowerblue;
+  display: inline-block;
+}
+.content {
+  width: 80%;
+  height: 400px;
+  background-color: coral;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: gray;
+  
+}
