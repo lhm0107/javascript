@@ -5,7 +5,7 @@ console.log(set);
 console.log(set.size);
 
 console.log(set.has(2));
-console.log(set.has(5));
+console.log(set.has(5)); // 원하는 자료가있는지 확인
 
 set.forEach((item) => console.log(item));
 for (const value of set.values()) {
