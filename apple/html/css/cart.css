@@ -1,0 +1,36 @@
+td,th  {
+  border : 1px solid black
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  vertical-align: top;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: coral;
+  color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: chocolate;
+}
+.btn:active {
+  background-color: brown;
+}
+.btn:focus{
+  border: 2px solid red;
+}
+
+.test {
+  font-size:20px;
+}
+
+input.test:focus {
+  border: 2px solid blue;
+}
