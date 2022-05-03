@@ -18,5 +18,13 @@ Dog.prototype.play = () => {
 	console.log('같이 노올자');
 };
 
+function Tiger(name, emoji) {
+	Animal.call(this, name, emoji);
+}
+Tiger.prototype = Object.create(Animal.prototype);
+Tiger.prototype.hunt = () => {
+	console.log('사냥하자');
+};
 const dog1 = new Dog('멍멍이', '🐶', '엘리');
 const dog2 = new Dog();
+const tiger1 = new Tiger('어흥', '🐯');
