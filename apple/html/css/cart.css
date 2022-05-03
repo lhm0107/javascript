@@ -34,3 +34,34 @@ td {
 input.test:focus {
   border: 2px solid blue;
 }
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  margin: 5px;
+}
+
+.flex-container1 {
+  width: 100vw;
+  display: flex;
+  -ms-flex-align: center;
+}
+
+
+.flex-item2 {
+  height: 100px;
+  background-color:orangered;
+  color: white;
+  line-height: 100px;
+}
+.flex-item2:first-child {
+  flex-grow: 2;
+}
+.fles-item:
