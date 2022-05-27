@@ -1,0 +1,25 @@
+{
+	"name": "ezdiatech",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "node-sass -rw --source-map true --output-style compact styles/main.scss styles.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lhm0107/ezdiatech.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/lhm0107/ezdiatech/issues"
+	},
+	"homepage": "https://github.com/lhm0107/ezdiatech#readme",
+	"dependencies": {
+		"node-sass": "^7.0.1",
+		"sass": "^1.49.0"
+	}
+}
